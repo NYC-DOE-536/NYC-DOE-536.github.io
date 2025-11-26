@@ -1,0 +1,277 @@
+<!-- Guardian Website Full HTML Template (Landing + Dashboard + Help + Login + Add Bot) -->
+<!-- All in one file so you can copy/paste easily into Replit or GitHub Pages -->
+<!-- Multiple Page Guardian Website Project -->
+<!-- FILE: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guardian System</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0a0a0f;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 50;
+    }
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 15px;
+    }
+    .center {
+      text-align: center;
+      margin-top: 150px;
+    }
+    .btn {
+      padding: 12px 25px;
+      border-radius: 8px;
+      background: #6a4df5;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 15px auto;
+      width: 85%;
+      max-width: 600px;
+    }
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div><strong>Guardian</strong></div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#help">Help</a>
+      <a href="#login">Login</a>
+      <a href="#addbot">Add Bot</a>
+    </div>
+  </nav>
+
+  <!-- LANDING PAGE -->
+  <section id="home" class="center">
+    <h1>ITGCC + LKF + CDA<br>Guardian System</h1>
+    <p>Secure • Modern • Fast</p>
+    <a class="btn" href="#dashboard">Open Dashboard</a>
+  </section>
+
+  <!-- DASHBOARD PAGE -->
+  <section id="dashboard" class="center">
+    <h2>Dashboard</h2>
+    <div class="card">
+      <h3>System Activity</h3>
+      <p>Logs, alerts, events and performance displayed here.</p>
+    </div>
+    <div class="card">
+      <h3>Performance Stats</h3>
+      <p>Live tracking for Guardian bot and systems.</p>
+    </div>
+  </section>
+
+  <!-- HELP PAGE -->
+  <section id="help" class="center">
+    <h2>How Can We Help?</h2>
+    <div class="card">
+      <h3>Live Chat • Email • Ticket Support</h3>
+      <p>Submit your message or report an issue.</p>
+    </div>
+  </section>
+
+  <!-- LOGIN PAGE -->
+  <section id="login" class="center">
+    <h2>Welcome Back</h2>
+    <div class="card">
+      <h3>Login</h3>
+      <input style="width:90%; padding:10px; border-radius:6px; margin:8px 0;" placeholder="Email" />
+      <input type="password" style="width:90%; padding:10px; border-radius:6px; margin:8px 0;" placeholder="Password" />
+      <a class="btn" href="#dashboard">Sign In</a>
+    </div>
+  </section>
+
+  <!-- ADD BOT PAGE -->
+  <section id="addbot" class="center">
+    <h2>Add Guardian Bot to Your Server</h2>
+    <a class="btn" href="#">Invite Bot</a>
+    <div class="card">
+      <h3>Setup Guides</h3>
+      <p>Configuration • Permissions • Commands</p>
+    </div>
+  </section>
+
+</body>
+</html>
+
+<!-- FILE: dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guardian Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="help.html">Help</a>
+    <a href="login.html">Login</a>
+    <a href="addbot.html">Add Bot</a>
+  </nav>
+  <section class="center">
+    <h2>Dashboard</h2>
+    <div class="card"><h3>System Activity</h3></div>
+    <div class="card"><h3>Performance Stats</h3></div>
+  </section>
+</body>
+</html>
+
+<!-- FILE: login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guardian Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="help.html">Help</a>
+    <a href="login.html">Login</a>
+    <a href="addbot.html">Add Bot</a>
+  </nav>
+  <section class="center">
+    <h2>Login</h2>
+    <div class="card">
+      <input placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <a class="btn" href="dashboard.html">Sign In</a>
+    </div>
+  </section>
+</body>
+</html>
+
+<!-- FILE: help.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="help.html">Help</a>
+    <a href="login.html">Login</a>
+    <a href="addbot.html">Add Bot</a>
+  </nav>
+  <section class="center">
+    <h2>Help Center</h2>
+    <div class="card">Submit a ticket or contact support.</div>
+  </section>
+</body>
+</html>
+
+<!-- FILE: addbot.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Bot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="help.html">Help</a>
+    <a href="login.html">Login</a>
+    <a href="addbot.html">Add Bot</a>
+  </nav>
+  <section class="center">
+    <h2>Add Guardian Bot</h2>
+    <a class="btn" href="#">Invite Bot</a>
+  </section>
+</body>
+</html>
+
+<!-- FILE: styles.css -->
+<style>
+body {
+  margin: 0;
+  background: #0a0a0f;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255,255,255,0.03);
+  position: fixed;
+  top: 0;
+}
+nav a {
+  color: #bbb;
+  text-decoration: none;
+}
+.center {
+  text-align: center;
+  margin-top: 160px;
+}
+.card {
+  background: rgba(255,255,255,0.06);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 15px auto;
+}
+.btn {
+  background: #6a4df5;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+input {
+  width: 85%;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+  border: none;
+}
+</style>
